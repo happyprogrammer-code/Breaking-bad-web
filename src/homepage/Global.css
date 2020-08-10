@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    width: 100vw;
+}
+
+ul{
+    margin: 0;
+    list-style:none;
+    padding: 0;
+}
+.container{
+    width: 85%;
+    margin: auto;
+  
+}
+
+input[type="button"]{
+    outline: none;
+}

@@ -1,0 +1,74 @@
+.mainall{
+   margin-top: 160px;
+   background-color: blue;
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.box{
+   height:300px;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.8s;
+   background-size: 100%;
+   position: relative;
+   
+ 
+   
+}
+.box .title{
+    background-color: #ccc;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-family: 'Montserrat', 'sans-serif';
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+}
+.box::after{
+    content: '';
+    display: block;
+    background: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all .5s;
+    
+}
+
+/* !IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT!IMPORTANT           KALO MAU ANIMASI BACKGROUND ZOOM JANGAN PAKEK {background-size: cover}*/
+.box1{
+ background-image: url('./fboxbg/1.PNG');
+}
+.box2{
+  background-image: url('./fboxbg/2.jpg');
+}
+.box3{
+    background-image: url('./fboxbg/3.png');
+}
+.box4{
+    background-image: url('./fboxbg/4.jpg');
+}
+
+.box:hover{
+    background-size: 500px;
+    
+}
+.box:hover .title{
+    opacity: 1;
+}
+.box:hover::after{
+    opacity: .5;
+}
+
+@media(min-width:575px){
+   
+    .mainall{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+

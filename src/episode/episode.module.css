@@ -1,0 +1,55 @@
+.main{
+    background: #f3f3f3;
+
+    font-family: 'Montserrat', 'sans-serif';
+}
+.title{
+    color: #fff;
+    background:#659358;
+    font-size: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+
+}
+.seasontit{
+    border-right: 2px solid #fff;
+}
+.seasontit, .epstit{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.epsname{
+    font-size: 3.5vw;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.epsname h1{
+    
+    margin-top: 10px;
+
+}
+
+.cast{
+   display: grid;
+   justify-content: center;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+   margin: 20px auto;
+   grid-gap: 20px;
+ 
+}
+
+.test{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    
+}
+
+@media(min-width: 350px){
+
+}

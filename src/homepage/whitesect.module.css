@@ -1,0 +1,99 @@
+.main {
+  transform: translateY(27%);
+
+  background:none;
+  color: #000;
+  font-family: 'Montserrat', 'sans-serif';
+  margin: 10px 0;
+  padding: 20px 0;
+}
+.sectgrid {
+  display: grid;
+
+  grid-template-areas:
+    'image'
+    'text';
+}
+.img {
+  grid-area: image;
+}
+.texts {
+  grid-area: text;
+}
+.texts h1 {
+  margin-bottom: 10px;
+  font-size: 6vw;
+}
+.texts p {
+  font-size: 3.5vw;
+}
+.img img{
+  width: 35vw;
+}
+.button{
+  margin-top: 15px;
+}
+.button input{
+  padding: 2vw 4vw;
+  background:none;
+  border: 2px solid #FD5E53;
+  color: #FD5E53;
+  border-radius: 30px;
+  font-size: 3vw;
+
+}
+.button input:hover{
+  background: #FD5E53;
+  color: #fff;
+
+}
+@media (min-width: 485px) {
+  .main {
+    padding: 70px 0;
+  }
+  .main img {
+    width: 26vw;
+  }
+  .main .img {
+    position: relative;
+  }
+  .sectgrid {
+    grid-template-columns: 1fr 1.2fr;
+    grid-template-areas: 'text image';
+  }
+  .img {
+    display: grid;
+    justify-content: right;
+    align-items: start;
+  }
+  .img img {
+    position: absolute;
+    width: 45vw;
+    right: -30px;
+    top: -70px;
+  }
+  .texts h1 {
+    margin-bottom: 10px;
+    font-size: 3vw;
+  }
+  .texts p {
+    font-size: 1.5vw;
+  }
+  .button input{
+    padding: 1vw 2vw;
+    background:none;
+    border: 2px solid #FD5E53;
+    color: #FD5E53;
+    border-radius: 30px;
+    font-size: 1.5vw;
+  
+  }
+  .button input:hover{
+    background: #FD5E53;
+    color: #fff;
+  
+  }
+}
+
+@media (min-width: 575px) {
+}
