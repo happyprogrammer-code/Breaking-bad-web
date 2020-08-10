@@ -41,7 +41,7 @@ const boxArr = charrArr.map(data => <Link to={`/character/${data.name}`} style={
           <h1>Search Character</h1>
         </div>
         <div className={s.searchbox}>
-          <input type="text" name="" id="" onChange={ev}/>
+          <input type="text" name="" placeholder="imput character's name" id="" onChange={ev}/>
         </div>
       </div>
       <div className={s.characterBoxes}>

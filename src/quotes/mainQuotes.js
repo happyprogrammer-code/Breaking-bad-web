@@ -40,7 +40,7 @@ export default function MainQuotes() {
             <h1>Search Episode</h1>
           </div>
           <div className={s.searchbox}>
-            <input type="text" name="" id="" onChange={(e) => ev(e)}/>
+            <input type="text" name="" id="" input="Input Quote" onChange={(e) => ev(e)}/>
           </div>
         </div>
         <div className={s.characterBoxes}>

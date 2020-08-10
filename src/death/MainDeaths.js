@@ -73,7 +73,7 @@ export default function MainDeaths() {
             <h1>Search Character Deaths</h1>
           </div>
           <div className={s.searchbox}>
-            <input type="text" name="" id="" onChange={e => ev(e)}/>
+            <input type="text" name="" id="" placeholder="insert character's name" onChange={e => ev(e)}/>
           </div>
         </div>
         <div className={s.characterBoxes}>

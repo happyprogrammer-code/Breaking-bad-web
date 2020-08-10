@@ -45,7 +45,7 @@ const MainEps = props =>{
             <h1>Search Episode</h1>
           </div>
           <div className={s.searchbox}>
-            <input type="text" name="" id="" onChange={e =>ev(e)}/>
+            <input type="text" name="" id="" input="the episode's name"onChange={e =>ev(e)}/>
           </div>
         </div>
         <div className={s.characterBoxes}>
